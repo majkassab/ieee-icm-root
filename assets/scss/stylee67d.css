@@ -828,7 +828,7 @@ br.px-60-minus {
   text-transform: uppercase; }
 
 #banner {
-  background: url(../images/home/home_banner.png) no-repeat;
+  background: url(../images/home/home_banner.png) no-repeat center center;
   background-size: cover;
   margin-top: -27px; }
   #banner .inside {
