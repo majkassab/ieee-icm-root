@@ -46,7 +46,91 @@
 
         gtag('config', 'G-4HKHJNMQYY');
     </script>
-
+    
+	<style>
+    :root {
+      --navy: #073b67;
+      --blue: #0878b9;
+      --pale: #eef6fb;
+      --ink: #243447;
+      --muted: #617184;
+      --border: #d9e3ec;
+      --white: #fff;
+      --gold: #e7b44a;
+    }
+    main a { color: var(--blue); }
+    .hero {
+      background: linear-gradient(120deg, #052c50, #0878b9);
+      color: var(--white);
+      padding: 54px 20px 46px;
+    }
+    .hero-inner, main, footer { max-width: 1120px; margin: 0 auto; }
+    .eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 700;
+      font-size: .78rem;
+      color: #d9efff;
+      margin-bottom: 10px;
+    }
+    main h1 { margin: 0 0 10px; line-height: 1.15; font-size: clamp(2rem, 5vw, 3.2rem); }
+    .hero p { margin: 0; max-width: 760px; color: #e9f5ff; font-size: 1.08rem; }
+    .notice {
+      margin-top: 24px;
+      padding: 14px 18px;
+      border-left: 4px solid var(--gold);
+      background: rgba(255,255,255,.12);
+      border-radius: 5px;
+    }
+    nav {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      top: 0;
+      z-index: 5;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    nav .nav-inner {
+      max-width: 1120px; margin: 0 auto; padding: 0 16px;
+      display: flex; gap: 22px;
+    }
+    nav a { display: inline-block; padding: 13px 0; text-decoration: none; font-size: .92rem; font-weight: 700; }
+    main { padding: 30px 20px 60px; }
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: clamp(20px, 3vw, 32px);
+      margin-bottom: 24px;
+      box-shadow: 0 5px 18px rgba(19, 49, 76, .045);
+      scroll-margin-top: 75px;
+    }
+    main h2 { color: var(--navy); margin: 0 0 18px; font-size: 1.55rem; line-height: 1.25; }
+    main h3 { color: var(--navy); margin: 24px 0 10px; font-size: 1.12rem; }
+    main p { margin: 0 0 12px; }
+    .lead { font-size: 1.03rem; }
+    .table-wrap { width: 100%; overflow-x: auto; margin: 14px 0; }
+    table { width: 100%; border-collapse: collapse; min-width: 580px; }
+    main th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { background: var(--pale); color: var(--navy); font-size: .93rem; }
+    tbody tr:last-child td { border-bottom: 0; }
+    .price { font-weight: 700; white-space: nowrap; }
+    .callout {
+      background: var(--pale); border-left: 4px solid var(--blue);
+      padding: 15px 18px; border-radius: 5px; margin: 16px 0;
+    }
+    .warning { border-left-color: var(--gold); background: #fff8e8; }
+    main ul, ol { padding-left: 23px; margin: 8px 0 16px; }
+    main li { margin: 6px 0; }
+    .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .mini-card { background: #f8fbfd; border: 1px solid var(--border); border-radius: 9px; padding: 18px; }
+    .mini-card h3 { margin-top: 0; }
+    .footer { background: #062d50; color: #e7f2fb; padding: 26px 20px; text-align: center; }
+    .footer p { margin: 0; }
+    
+    
+  </style>
 </head>
 
 <body>
@@ -247,126 +331,169 @@
         </div>
     </div>
 
-    <br class="px-80">
-
-    <div id="second_blk">
-        <div class="wrapper">
-            <h3>Author Registration</h3>
-            <p>TBA...</p>
-<!--
-            <ol style="list-style: decimal; text-align: justify; font-family: Montserrat, sans-serif;">
-            	<li style="margin-bottom: 12px;">Accepted papers must be presented at the conference by an author registered at the full (non-student) rate to be included in both the conference proceedings and IEEE Xplore.</li>
-            	<li style="margin-bottom: 12px;">At least one author per paper must complete a full (non-student) registration by <b>August 1, 2026</b>. Without registration, the paper will not be included in the proceedings or IEEE Xplore.</li>
-            	<li style="margin-bottom: 12px;">If a registered author does not present at the conference, the paper will be included in the conference proceedings but not in IEEE Xplore.</li>
-            	<li style="margin-bottom: 12px;">If two or more papers share the same presenter, the first paper requires a full (non-student) registration, and the second paper is eligible for a 50% discount.</li>
-            		<ol type="a" style="list-style-type: lower-alpha; padding-left: 30px; text-align: justify;">
-       				     <li style="margin-bottom: 12px;">For more than two accepted papers, one additional full (non-student) registration is required for every two papers.</li>
-       				</ol>
-            	<li style="margin-bottom: 12px;">Authors who are unable to attend the conference in person must obtain prior approval from both the Finance Chair and the Program Chair to register and present their paper online. Requests must be submitted in writing with a brief justification.</li>
-            		<ol type="a" style="list-style-type: lower-alpha; padding-left: 30px; text-align: justify;">
-       				     <li style="margin-bottom: 12px;">Failure to register or to complete the approved online presentation as scheduled may result in removal of the paper from the conference proceedings and/or IEEE Xplore.</li>
-       				</ol>
-            </ol>
-            
-            <p>All rates listed below are in US Dollars (USD). So, the charge will be in USD.</p>
--->
-            <h3 class="top">Registration Fees</h3>
-            <a class="btn" href="#" target="_blank">Register Now (soon)</a>
-            <!-- <p style="color: red; font-weight:bold;">Registration link will be available after fixing a technical issue. Apologies for any inconvenience.</p> -->
-            <div class="blk table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th colspan="6">Early<span> Bird Until Oct 15, 2026</span></th>
-                            <th colspan="6">Standard <span> Oct 26 - Nov 12, 2026</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="first">
-                            <td></td>
-                            <td><span>CAS Member</span></td>
-                            <td><span>IEEE Member</span></td>
-                            <td><span>Non-Member</span></td>
-                            <td><span>IEEE CAS Student</span></td>
-                            <td><span>IEEE Student Member</span></td>
-                            <td><span>Student Non-Member</span></td>
-                            <td><span>CAS Member</span></td>
-                            <td><span>IEEE Member</span></td>
-                            <td><span>Non-Member</span></td>
-                            <td><span>IEEE CAS Student</span></td>
-                            <td><span>IEEE Student Member</span></td>
-                            <td><span>Student Non-Member</span></td>
-                        </tr>
-                        <tr>
-                            <td>(In-person)</td>
-                            <td>$400</td>
-                            <td>$500</td>
-                            <td>$600</td>
-                            <td>$350</td>
-                            <td>$400</td>
-                            <td>$450</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                        </tr>
-                        <tr>
-                            <td>Author (Online)</td>
-                            <td>$200</td>
-                            <td>$200</td>
-                            <td>$200</td>
-                            <td>$200</td>
-                            <td>$200</td>
-                            <td>$200</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                            <td>NA</td>
-                        </tr>
-                        <tr>
-                            <td>Non-Author</td>
-                            <td>$350</td>
-                            <td>$400</td>
-                            <td>$500</td>
-                            <td>$250</td>
-                            <td>$300</td>
-                            <td>$350</td>
-                            <td>$550</td>
-                            <td>$550</td>
-                            <td>$650</td>
-                            <td>$300</td>
-                            <td>$350</td>
-                            <td>$400</td>
-                        </tr>
-                        <tr>
-                            <td>Half-Day Tutorials</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div id="note">
-                <p style="font-weight: 600; color:red;">* Authors of accepted papers who will present at the conference but have financial difficulties, as they are from low-income countries, can submit a request for financial support, which is up to a 50% reduction in the Author Registration Fees. Further information will be provided in the paper acceptance notification.</p>
-            </div>
-        </div>
+  <nav aria-label="Registration page sections">
+    <div class="nav-inner">
+      <a href="#dates">Important Dates</a>
+      <a href="#fees">Registration Fees</a>
+      <a href="#authors">Author Policy</a>
+      <a href="#entitlements">Entitlements</a>
+      <a href="#tickets">Social Tickets</a>
+      <a href="#refunds">Refunds</a>
+      <a href="#invitation">Invitation Letter</a>
     </div>
-</div>
+  </nav>
+
+  <main>
+  <div class="notice"><strong>Registration opens October 10, 2026.</strong> Please review the dates and author-registration requirements below before registering.</div>
+    <section id="dates">
+      <h2>Important Dates</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Category</th><th>Date</th></tr></thead>
+          <tbody>
+            <tr><td>Online registration opens</td><td>October 10, 2026</td></tr>
+            <tr><td>Early Bird Registration Deadline</td><td>October 24, 2026</td></tr>
+            <tr><td>Regular Registration — Authors</td><td>October 25 – November 7, 2026</td></tr>
+            <tr><td>Regular Registration — Non-Authors</td><td>From October 25, 2026</td></tr>
+            <tr><td>Author Registration Deadline</td><td><strong>November 7, 2026</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout warning"><strong>Important:</strong> Each accepted paper must be covered by a valid Full Non-Student Author Registration by November 7, 2026.</div>
+    </section>
+
+    <section id="fees">
+      <h2>Registration Fees</h2>
+      <h3>In-Person Registration</h3>
+      <p>Fees are shown as <strong>Early Bird / Regular</strong> and are in US dollars.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th rowspan="2">Membership Category</th><th colspan="2">Author</th><th colspan="2">Non-Author</th></tr>
+            <tr><th>Early Bird</th><th>Regular</th><th>Early Bird</th><th>Regular</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>IEEE CASS Member</td><td class="price">$400</td><td class="price">$450</td><td class="price">$350</td><td class="price">$450</td></tr>
+            <tr><td>IEEE Member</td><td class="price">$500</td><td class="price">$550</td><td class="price">$400</td><td class="price">$500</td></tr>
+            <tr><td>Non-member</td><td class="price">$600</td><td class="price">$650</td><td class="price">$500</td><td class="price">$550</td></tr>
+            <tr><td>IEEE CASS Student</td><td class="price">$350</td><td class="price">$400</td><td class="price">$250</td><td class="price">$300</td></tr>
+            <tr><td>IEEE Student</td><td class="price">$400</td><td class="price">$450</td><td class="price">$300</td><td class="price">$350</td></tr>
+            <tr><td>Student Non-member</td><td class="price">$450</td><td class="price">$500</td><td class="price">$350</td><td class="price">$400</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Online Author Registration (Non-Student; Subject to Approval)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Registration Type</th><th>Early Bird</th><th>Regular</th></tr></thead>
+          <tbody><tr><td>Online Author</td><td class="price">$200</td><td class="price">$250</td></tr></tbody>
+        </table>
+      </div>
+      <div class="callout"><strong>Online author registration includes:</strong> participation in the assigned virtual presentation session and access to conference proceedings. It excludes in-person conference activities, meals, and social events.</div>
+      <p><strong>Student rates are for attendance only.</strong> An accepted paper must be covered by a qualifying Full Non-Student Author Registration.</p>
+    </section>
+
+    <section id="authors">
+      <h2>Author Registration and Publication Policy</h2>
+      <p class="lead">At least one author of each accepted paper must complete a Full Non-Student Author Registration by the author registration deadline.</p>
+
+      <h3>Paper Coverage</h3>
+      <ul>
+        <li>Each accepted paper must be covered by a qualifying Full Non-Student Author Registration by November 7, 2026, either in person or through an approved online registration.</li>
+        <li>Student-rate registrations cannot satisfy the paper coverage requirement.</li>
+      </ul>
+
+      <h3>Multiple-Paper Registration</h3>
+      <ul>
+        <li>Each qualifying Full Non-Student Author Registration covers one accepted paper.</li>
+        <li>For multiple papers presented in person by the same author, full fees apply to the first and subsequent odd-numbered papers. A 50% discount applies to the second and subsequent even-numbered papers.</li>
+        <li>Additional-paper fees cover paper publication requirements only and do not provide additional conference registrations.</li>
+      </ul>
+
+      <h3>Publication Policy</h3>
+      <ul>
+        <li>At least one author must present each paper in person or through an approved online session.</li>
+        <li>Papers without valid registration or presentation will not be submitted to IEEE Xplore and may be excluded from the conference proceedings, subject to applicable IEEE publication policies.</li>
+      </ul>
+
+      <h3>Online Presentation Policy</h3>
+      <p>Online presentation may be approved for authors unable to attend in person due to visa difficulties, health reasons, or insufficient travel funding.</p>
+      <ol>
+        <li><strong>Approval:</strong> Submit a brief justification to the ICM 2026 Secretariat, with institutional or supervisor endorsement where applicable.</li>
+        <li><strong>Registration:</strong> Complete the applicable full online author registration by November 7, 2026.</li>
+        <li><strong>Presentation:</strong> Upload a 10-minute prerecorded presentation by the announced deadline.</li>
+        <li><strong>Attendance:</strong> Join the assigned online session and participate live in the Q&amp;A and discussion. Approved online presentations will be scheduled in designated virtual sessions.</li>
+        <li><strong>No-show policy:</strong> Failure to attend the assigned session without prior approval may result in a no-show classification and may affect inclusion in the proceedings and submission to IEEE Xplore, subject to applicable IEEE policies.</li>
+      </ol>
+      <p>Detailed presentation instructions will be provided through the official conference platform.</p>
+    </section>
+
+    <section id="entitlements">
+      <h2>Registration Entitlements</h2>
+      <p>Full in-person conference registration includes:</p>
+      <ul>
+        <li>Access to technical sessions and tutorials</li>
+        <li>Conference proceedings</li>
+        <li>Conference lunches and coffee breaks</li>
+        <li>One welcome reception ticket and one gala dinner ticket</li>
+      </ul>
+      <div class="callout">Workshop participation may require separate registration and additional fees. Details will be announced in the final conference program.</div>
+    </section>
+
+    <section id="tickets">
+      <h2>Additional Social Event Tickets</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Additional Ticket</th><th>Fee</th></tr></thead>
+          <tbody>
+            <tr><td>Additional Welcome Reception Ticket</td><td class="price">$45</td></tr>
+            <tr><td>Additional Gala Dinner Ticket</td><td class="price">$80</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Additional social-event tickets are intended only for accompanying persons or guests and do not include access to:</p>
+      <ul>
+        <li>Technical sessions and tutorials</li>
+        <li>Conference proceedings or materials</li>
+        <li>Conference lunches and coffee breaks</li>
+        <li>Workshops</li>
+      </ul>
+      <p>Additional tickets are subject to availability.</p>
+    </section>
+
+    <section id="refunds">
+      <h2>Cancellation and Refund Policy</h2>
+      <p>Cancellation requests must be submitted in writing to the ICM 2026 Secretariat.</p>
+      <ul>
+        <li><strong>On or before November 7, 2026:</strong> 50% refund of the registration fee.</li>
+        <li><strong>From November 8, 2026:</strong> No refund.</li>
+        <li>Non-attendance does not qualify for a refund.</li>
+        <li>Applicable transaction charges may be deducted.</li>
+        <li>Approved refunds will be processed after the conference.</li>
+      </ul>
+      <p>The same policy applies to additional social-event tickets.</p>
+    </section>
+
+    <section id="invitation">
+      <h2>Invitation Letter</h2>
+      <ul>
+        <li>Participants who require an invitation letter for visa or administrative purposes may request one after completing registration and payment.</li>
+        <li>Invitation letters do not guarantee visa approval or financial support.</li>
+        <li>Detailed instructions for requesting an invitation letter will be provided on the visa information page.</li>
+      </ul>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
 
 
 <br class="px-80">
@@ -425,8 +552,6 @@
 
 </body>
 
-
-<!-- Mirrored from www.ieee-icm2023.org/registration by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 16:29:28 GMT -->
 </html>
 
 
