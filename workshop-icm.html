@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <title>ICM 2026 | Workshop</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!--styles-->
+    <link href="assets/scss/reset_cssf195.css?v=2.1" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/stylee67d.css?v=1.3" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/homef731.html?v=5.0" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/insidea9f2.css?v=2.6" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/responsive/style-responsive83a7.css?v=1.9" type="text/css" rel="stylesheet" />
+
+    <!-- Include the jQuery library (local or CDN) -->
+    <script src="assets/js/jquery-latest.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="assets/plugins/fancybox/dist/jquery.fancybox.min.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HKHJNMQYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4HKHJNMQYY');
+    </script>
+	<style>
+     /* --- Root CSS Variables --- */
+        :root {
+            --primary-color: #006699; /* IEEE Blue */
+            --primary-dark: #004466;
+            --secondary-color: #d9534f;
+            --accent-color: #f39c12;
+            --bg-light: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-muted: #6c757d;
+            --white: #ffffff;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+                background: linear-gradient(357deg, #385697, #a3a3a3), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80) center / cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            margin-top: -27px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+        }
+
+        .key-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .detail-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .detail-card i {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .detail-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .btn-register {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+            transition: var(--transition);
+        }
+
+        .btn-register:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px);
+        }
+
+        /* --- Overview Section --- */
+        .overview-content {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .media-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+
+        .poster-placeholder {
+            border: 2px dashed #ccc;
+            padding: 40px 20px;
+            border-radius: 6px;
+            background: #fafafa;
+            margin-bottom: 15px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 250px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        /* --- Program & Schedule Section --- */
+        .schedule-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tab-btn {
+            padding: 10px 25px;
+            border: none;
+            background-color: var(--white);
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .schedule-table-container {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eef0f2;
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        /* --- Speakers Section --- */
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .speaker-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .speaker-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+        }
+
+        .speaker-info {
+            padding: 20px;
+        }
+
+        .speaker-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .speaker-affiliation {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .speaker-bio {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* --- Committee Section --- */
+        .committee-table-container {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* --- Contact Section --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .contact-card a {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        	}
+
+        	.details-card {
+            background: #f4f6f9;
+            padding: 15px;
+            border-radius: 6px;
+       		}
+
+        	.details-card strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        	}
+       		.criteria-list li {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        	}
+        	.criteria-list strong {
+            color: var(--primary-color);
+        	}
+        	.prerequisites {
+        	background: #f5f5f5;
+        	padding: 20px;
+       		border-left: 4px solid #00629B;
+        	font-family: Arial, sans-serif;
+        	line-height: 1.8;
+    		}
+
+    		.prerequisites h3 {
+        	color: #00629B;
+        	font-weight: bold;
+    		}
+    		
+    		.partners-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+        	}
+
+        	.partners-list li {
+            border: none;
+            padding: 5px 0;
+        	}
+        	
+        	.cta-section {
+            text-align: center;
+            margin-top: 40px;
+            padding: 25px;
+            background: var(--highlight-color);
+            border-radius: 8px;
+        	}
+        	.cta-section .btn {
+    		display: inline-block;
+    		color: #ffffff;
+    		padding: 12px 25px;
+    		text-decoration: none;
+    		border-radius: 4px;
+    		font-weight: bold;
+    		margin: 5px;
+    		transition: background-color 0.2s ease;
+    		background-color: #002855
+        	}
+        	.cta-section .btn:hover {
+            background-color: blue;
+        	}
+
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="toggle-menu" id="toggle-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="slide-menu" id="slide-menu">
+            <ul>
+                <li class="active">
+                    <span><a href="index.html">Home</a></span>
+                </li>
+                <li class="active">
+                    <span><a href="about.html">About</a></span>
+                </li>
+                <li class="has-sub"><span class="tab"><a>Contributing</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+                            <li><a href="https://edas.info/N35431">EDAS Submission System</a></li>
+                            <li><a href="assets/ICM2026CFP.pdf">Call for Papers</a></li>
+                            <li><a href="assets/ICM-Call-for-Special-Sessions.pdf">Call for Special Sessions</a></li>
+                            <li><a href="assets/ICM-Call-for-Cross-Society-Special-Sessions.pdf">Call for Cross-Society Special Sessions</a></li>
+                            <li><a href="assets/ICM-CFP-Embedded-Workshop.pdf">⁠Call for ⁠Embedded Workshops</a></li>
+                            <li><a href="assets/ICM-CFP-Live Demo.pdf">Call for Live Demo</a></li>
+                            <li><a href="assets/ICM-Call-for-Tutorial.pdf">Call for Tutorial</a></li>
+                            <li><a href="final_paper.html">Final Paper Submission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-sub"><span class="tab"><a>Program</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+                            <li><a href="program.html">Program at a Glance</a></li>
+                            <!-- <li><a href="tech_program">Technical Program</a></li> -->
+                            <li><a href="assets/ICM2023%20ProgramFinal-2.pdf">Technical Program</a></li>
+                            <li><a href="speakers.html">Keynote Speakers</a></li>
+                            <li><a href="social_events.html">Social Events</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+							<li><a href="sponsorship.html">Sponsorship</a></li>
+							<li><a href="workshop-icm.html">Hands-on Workshop on Chip Design and Fabrication</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active">
+                    <span><a href="committee.html">Committee</a></span>
+                </li>
+                <!-- <li class="active">
+                        <span><a href="speakers">Speakers</a></span>                       
+                    </li> -->
+                <!-- <li class="active">
+                    <span><a href="program">Program</a></span>
+                </li> -->
+                <li class="active">
+                    <span><a href="registration.html">Registration</a></span>
+                </li>
+                <!-- <li class="active">
+                    <span><a href="cfp">Call For Paper</a></span>
+                </li> -->
+                <li class="has-sub"><span class="tab"><a>Venue & Visitor Info</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+						<li><a href="visitor.html">Visa & Venue</a></li>
+						<li><a href="kuching.html">Kuching</a></li>
+                        <li><a href="hotel-recommendation.html">Hotel Recommendation</a></li>
+                    </ul>
+                    </div>
+                </li>
+				<li class="active">
+                    <span><a href="media.html">Media</a></span>
+                </li>
+                <li class="active">
+                    <span><a href="#footer">Contact Us</a></span>
+                </li>
+                <!--                    <li class="has-sub">
+                        <span class="tab"><a>Option With sub</a></span>
+                        <div class="sub-menu">
+                            <ul class="main">
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                                <li class="has-sub">
+                                    <span><a href="#">Sub option with sub</a></span>
+                                    <ul>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                                <li class="has-sub">
+                                    <span><a href="#">Sub option with sub</a></span>
+                                    <ul>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                            </ul>
+                        </div>
+                    </li>                    -->
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $('#toggle-menu').click(function() {
+                $(this).toggleClass('active');
+                $('#slide-menu').toggleClass('active');
+            });
+
+            $('.slide-menu > ul > li.has-sub .tab').on('click', function() {
+                $(this).siblings('.sub-menu').slideToggle();
+                $(this).parent('li').toggleClass('active');
+            });
+
+            $('.sub-menu li.has-sub').click(function() {
+                $(this).children('ul').slideToggle();
+                $(this).toggleClass('active');
+            });
+        });
+    </script><div id="navbar">
+    <div class="wrapper">
+        <div class="logos clear">
+            <div class="left_blk">
+                <a href="index.html"><img src="assets/images/icm_logoc619.png?v=1.0" alt=""></a>
+            </div>
+            <!--
+            <div class="right_blk clear">
+                <a href="https://www.ku.ac.ae/" target="_blank"><img src="assets/images/ku_logo.png" alt=""></a>
+                <a href="https://www.uaeu.ac.ae/en/" target="_blank"><img style="width: 319px; max-width: 100%;" src="assets/images/uae_uni_logo.jpg" alt=""></a>
+                <a href="https://ieee-cas.org/" target="_blank"><img style="width: 50px;" src="assets/images/cas_logo.png" alt=""></a>
+                <a href="https://www.ieee.org/" target="_blank"><img style="width: 150px;" src="assets/images/ieee_logo.png" alt=""></a>
+            </div>
+            -->
+        </div>
+        <div class="nav_items clear">
+            <ul class="clear">
+                <li><a href="index.html" class="">Home</a></li>
+                <li><a href="about.html" class="">About</a></li>
+                <li>
+                    <a>Contributing</a>
+                    <ul>
+                        <li><a href="https://edas.info/N35431">EDAS Submission System</a></li>
+                        <li><a href="assets/ICM2026CFP.pdf">Call for Papers</a></li>
+                            <li><a href="assets/ICM-Call-for-Special-Sessions.pdf">Call for Special Sessions</a></li>
+                            <li><a href="assets/ICM-Call-for-Cross-Society-Special-Sessions.pdf">Call for Cross-Society Special Sessions</a></li>
+                            <li><a href="assets/ICM-CFP-Embedded-Workshop.pdf">⁠Call for ⁠Embedded Workshops</a></li>
+                            <li><a href="assets/ICM-CFP-Live Demo.pdf">Call for Live Demo</a></li>
+                            <li><a href="assets/ICM-Call-for-Tutorial.pdf">Call for Tutorial</a></li>
+                            <li><a href="final_paper.html">Final Paper Submission</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Program</a>
+                    <ul>
+                        <li><a href="program.html">Program at a Glance</a></li>
+                        <!-- <li><a href="tech_program">Technical Program</a></li> -->
+                        <li><a href="assets/ICM2023%20ProgramFinal-2.pdf">Technical Program</a></li>
+                        <li><a href="speakers.html">Keynote Speakers
+                            </a></li>
+                        <li><a href="social_events.html">Social Events
+                            </a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+						<li><a href="sponsorship.html" class="">Sponsorship</a></li>
+						<li><a href="workshop-icm.html">Hands-on Workshop on Chip Design and Fabrication</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="program" class="">Program</a></li> -->
+                <li><a href="committee.html" class="">Committee</a></li>
+                <!-- <li><a href="speakers"class="">Speakers</a></li> -->
+
+                <li><a href="registration.html">Registration</a></li>
+                <!-- <li><a href="cfp" class="">Call For Paper</a></li> -->
+                <li>
+                	<a>Venue & Visitor Info</a>
+                    <ul>
+						<li><a href="visitor.html">Visa & Venue</a></li>
+						<li><a href="kuching.html">Kuching</a></li>
+                        <li><a href="hotel-recommendation.html">Hotel Recommendation</a></li>
+                    </ul>
+                </li>
+				<li><a href="media.html" class="active">Media</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--
+<div id="registration">
+    <div id="banner">
+        <div class="wrapper">
+            <div class="inside">
+                <h1>Workshop</h1>
+                <h2>Workshop</h2>
+            </div>
+        </div>
+    </div>
+-->
+
+<!-- 1. Main Page (HOME) Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hands-on Workshop on Chip Design and Fabrication</h1>
+            <p class="hero-subtitle">From Idea to Manufactured Silicon: A 2-Day Intensive Open-Source ASIC Design Flow</p>
+            
+            <div class="key-details-grid">
+                <div class="detail-card">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h3>Date</h3>
+                    <p>December 9-10, 2026</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Location</h3>
+                    <p>Borneo Cultures Museum, Kuching, Sarawak, Malaysia</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Co-located with</h3>
+                    <p>38th IEEE International Conference on Microelectronics (ICM 2026)</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Format</h3>
+                    <p>2-Day, Hands-on, Beginner-friendly</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Capacity</h3>
+                    <p>Limited to 60 Selected Participants</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Key Benefit</h3>
+                    <p>Qualifying designs will be fabricated into a physical chip via Tiny Tapeout & Open Silicon Initiative!</p>
+                </div>
+            </div>
+
+            <a href="#" target="_blank" class="btn-register">
+                Apply for Workshop (Soon) <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+<!-- Welcome & Overview Section -->
+    <section>
+        <div class="Overview">
+            <h2 class="section-title" style=" padding: 40px 0;">Workshop Overview & Highlights</h2>
+            <div class="overview-content">
+                <p>This intensive two-day workshop introduces participants to the complete open-source digital integrated circuit (IC) design flow, combining transistor-level implementation with an automated RTL-to-GDSII workflow</p>
+                <br>
+                <p>Starting with an overview of the global IC ecosystem and open-source Process Design Kits (PDKs), participants will learn about community-driven ASIC fabrication initiatives like Tiny Tapeout, UNIC-CASS, Chipathon, and Code-A-Chip</p>
+            </div>
+        </div>
+    </section>
+<!-- Hands-On Experience -->
+    <section>
+        <div class="Outcomes">
+            <h2 class="section-title">Hands-On Experience</h2>
+            <div class="overview-content">
+	<div class="details-grid">
+        <div class="details-card">
+            <strong>Transistor-Level Design</strong>
+            <p>Implement a Boolean function from schematic simulation through layout, LVS, parasitic extraction (PEX), and post-layout verification.</p>
+        </div>
+        <div class="details-card">
+            <strong>Verilog & Automated RTL-to-GDSII</strong>
+            <p>Develop and simulate a 4-bit counter in Verilog, pushing it through a full automated digital ASIC flow using open-source EDA tools.</p>
+        </div>
+    </div>
+    <div class="details-card" style="margin-top: 15px;">
+        <strong>Tapeout Integration</strong>
+        <p>Integrate your design into the Tiny Tapeout platform for real-world chip manufacturing.</p>
+    </div>     
+            </div>
+        </div>
+    </section>
+<!-- Key Learning Outcomes -->
+    <section>
+        <div class="program">
+            <h2 class="section-title">Key Learning Outcomes</h2>
+            <div class="overview-content">
+    <ul class="criteria-list">
+        <li>
+            <strong>Understand the Ecosystem</strong>
+            <span>Navigate the global integrated circuit landscape, open-source PDKs, and community tapeout programs (Tiny Tapeout, Chipathon, Code-A-Chip, UNIC-CASS).</span>
+        </li>
+        <li>
+            <strong>Transistor-Level Implementation</strong>
+            <span>Build and verify a Boolean function from schematic through layout design.</span>
+        </li>
+        <li>
+            <strong>Physical Verification</strong>
+            <span>Execute Layout Versus Schematic (LVS) checks, Parasitic Extraction (PEX), and post-layout simulations.</span>
+        </li>
+        <li>
+            <strong>Digital Design & Simulation</strong>
+            <span>Write, test, and simulate digital logic (4-bit counter) in Verilog.</span>
+        </li>
+        <li>
+            <strong>RTL-to-GDSII Automation</strong>
+            <span>Execute an automated open-source EDA digital flow.</span>
+        </li>
+        <li>
+            <strong>Silicon Fabrication Readiness</strong>
+            <span>Package and submit finished designs to the Tiny Tapeout platform ready for manufacturing.</span>
+        </li>
+    </ul>
+    </div>
+    </div>
+    </section>
+<!-- 2. Program & Schedule Section -->
+    <section id="container" style="background-color: #fff;">
+        <div class="container">
+            <h2 class="section-title">Program & Schedule</h2>
+            <p class="section-subtitle">Featured Instructor: Juan Sebastian Moya, International Iberian Nanotechnology Laboratory (INL)</p>
+
+            <div class="schedule-table-container">
+                <h3 style="padding: 15px 20px; background: var(--primary-color); color: white;">
+                    <i class="fa-regular fa-sun"></i> DAY 1: Ecosystem, Concepts & Schematic Simulation
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Time</th>
+                            <th style="width: 75%;">Session Title & Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:30 – 09:30</td>
+                            <td>Opening Session & Introduction</td>
+                        </tr>
+                        <tr>
+                            <td>09:30 – 10:30</td>
+                            <td>
+                            	<strong>Global IC Ecosystem</strong>
+                            	<br>
+                            	Commercial organization of the world's integrated circuit ecosystem
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:30 – 12:00</td>
+                            <td>
+                            <strong>Open-Source Ecosystem & PDKs</strong>
+                            <br>
+							Open-source tools as a complement; PDK descriptions
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:00 – 13:00</td>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <td>13:00 – 14:00</td>
+                            <td>
+                            	<strong>Programs for Taping Out ASICs</strong><br>
+								Overview of Tiny Tapeout (Wokwi, Verilog), Latin/Chip Practice (EDS), and Code-A-Chip (SSCS)</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 – 16:00</td>
+                            <td>
+                            <strong>Community Initiatives & Core Digital Concepts</strong><br>
+							Chipathon (SSCS), UNIC-CASS, Open Silicon, JKU Platform presentation, Q&A, and core digital flow concepts
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16:00 – 16:15</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <td>16:15 – 17:00</td>
+                            <td>
+                            <strong>Lab 1: Boolean Function Schematic Simulation</strong><br>
+							Hands-on transistor-level schematic entry and simulation
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-table-container">
+                <h3 style="padding: 15px 20px; background: var(--primary-dark); color: white;">
+                    <i class="fa-regular fa-moon"></i> DAY 2: Physical Layout, Verification & RTL-to-GDSII
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Time</th>
+                            <th style="width: 75%;">Session Title & Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:30 – 10:30</td>
+                            <td>
+                            	<strong>Lab 2: Boolean Function Layout</strong><br>
+								Hands-on layout creation for transistor-level design
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:30 – 10:45</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <td>10:45 – 11:30</td>
+                            <td>
+                            	<strong>Lab 2 (Cont.): PEX & Verification</strong><br>
+								Parasitic extraction (PEX) and post-layout verification of the Boolean function
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:30 – 12:45</td>
+                            <td>
+                            	<strong>Verilog Design & Simulation</strong><br>
+								Verilog implementation and logic simulation of a 4-bit counter
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:45 – 14:00</td>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 – 16:00</td>
+                            <td>
+                            	<strong>RTL-to-GDSII Flow & Tapeout Integration</strong><br>
+								Running the complete RTL-to-GDSII flow for the counter and integrating it onto the Tiny Tapeout platform
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="prerequisites">
+            <h3>Participant Prerequisites & Eligibility</h3>
+            <p>To ensure an optimal hands-on learning experience, applicants must meet the following prerequisites:</p>
+        	<ul>
+        	<li>
+            <strong>Language Proficiency:</strong>
+            Advanced English (the course is fully delivered in English).
+        	</li>
+        	<li>
+            <strong>Technical Knowledge:</strong>
+            Basic understanding of microelectronics and semiconductor principles,
+            including transistors (BJT/FET) and CMOS technology.
+        	</li>
+        	<li>
+            <strong>Software Skills:</strong>
+            Working knowledge of Linux operating systems, a scripting language,
+            and Hardware Description Languages (HDL / Verilog).
+        	</li>
+    		</ul>
+    		</div>
+    		<br class="px-80">
+    		<div class="prerequisites">
+            <h3>What Selected Participants Receive</h3>
+            <p>Supported participants selected for the workshop will receive:</p>
+        	<ul>
+        	<li>
+            <strong>Full Course & Certificate:</strong>
+            Access to the complete 2-day IC design workshop and an official Certificate of Completion.
+        	</li>
+        	<li>
+            <strong>Fabricated Microchip:</strong>
+            One physical manufactured chip per qualifying design, sponsored by the Open Silicon Initiative and produced via Tiny Tapeout.
+        	</li>
+        	<li>
+            <strong>Accommodation:</strong>
+            3 nights of shared hotel accommodation in Kuching.
+        	</li>
+        	<li>
+            <strong>Meals:</strong>
+            Provided lunch and coffee breaks during the workshop days.
+        	</li>
+        	<li>
+            <strong>Conference Networking:</strong>
+            Opportunity to attend IEEE ICM 2026 and engage with global semiconductor experts.
+        	</li>
+    		</ul>
+    		</div>
+    		<p><strong>Note: Participant travel, visa fees, airport transfers, dinners, incidentals, and medical expenses are not included</strong></p>
+        </div>
+    </section>
+
+
+<!-- Sponsors & Organizing Partners -->
+    <section id="container">
+        <div class="container">
+            <h2 class="section-title">Sponsors & Organizing Partners</h2>
+   				 <ul class="partners-list">
+        			<li>✔ IEEE Division I – Open Silicon Initiative</li>
+        			<li>✔ IEEE Circuits and Systems Society (CASS)</li>
+        			<li>✔ IEEE Electron Devices Society (EDS)</li>
+        			<li>✔ IEEE Solid-State Circuits Society (SSCS)</li>
+        			<li>✔ ICM 2026 Organizing Committee (IEEE CASS Malaysia Chapter)</li>
+        			<li>✔ Tiny Tapeout</li>
+    			</ul>
+
+    			<div class="cta-section">
+        			<h2>Ready to Join?</h2>
+        			<p>Submit your application today to secure your spot.</p>
+        			<a href="#" class="btn">Apply for Workshop (Soon)</a>
+    			</div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    
+<br class="px-80">
+
+<div id="footer" class="clear">
+    <div class="wrapper">
+        <div class="dbl_blk clear">
+            <div class="left_blk inner">
+                <h2 class="common-title">Location Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.8711902267287!2d110.34237879999999!3d1.5554849000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba731a02a0425%3A0x79aaa9b1d4a20d4f!2sBorneo%20Cultures%20Museum!5e1!3m2!1sen!2slb!4v1773335960705!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+            </div>
+            <div class="right_blk inner">
+                <h2 class="common-title">Contact Us</h2>
+
+                <div class="blk">
+                    <!-- <p class="location">Location will be here</p> -->
+                    <!--<h4>Abdallah Kassem</h4>-->
+                    <p class="email"><span>Email : </span>icm2026@ieee-icm.org</p>
+                    <!-- <p class="contact">Contact no will be here</p> -->
+                </div>
+
+                <h3>©2026 ICM</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        if (window.innerWidth > 900) {
+            var min_highestSection = 0;
+            $('#footer .dbl_blk .inner').each(function() {
+                if ($(this).height() > min_highestSection) {
+                    min_highestSection = $(this).height();
+                }
+            });
+            $('#footer .dbl_blk .inner').height(min_highestSection);
+            $('#footer .dbl_blk .right_blk').height(min_highestSection - 15);
+        }
+    });
+
+    $(document).ready(function() {
+        if (window.innerWidth > 400) {
+            setTimeout(function() {
+                var min_highestSection = 0;
+                $('#cmn-sponsor .blks .blk').each(function() {
+                    if ($(this).height() > min_highestSection) {
+                        min_highestSection = $(this).height();
+                    }
+                });
+                $('#cmn-sponsor .blks .blk').height(min_highestSection);
+            }, 300);
+        }
+    });
+</script>
+
+</body>
+
+
+<!-- Mirrored from www.ieee-icm2023.org/registration by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 16:29:28 GMT -->
+</html>
+
