@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <title>ICM 2026 | 3rd Sino-Malaysia IEEE CASS Workshop</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!--styles-->
+    <link href="assets/scss/reset_cssf195.css?v=2.1" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/stylee67d.css?v=1.3" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/homef731.html?v=5.0" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/insidea9f2.css?v=2.6" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/responsive/style-responsive83a7.css?v=1.9" type="text/css" rel="stylesheet" />
+
+    <!-- Include the jQuery library (local or CDN) -->
+    <script src="assets/js/jquery-latest.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="assets/plugins/fancybox/dist/jquery.fancybox.min.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HKHJNMQYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4HKHJNMQYY');
+    </script>
+	<style>
+     /* --- Root CSS Variables --- */
+        :root {
+            --primary-color: #006699; /* IEEE Blue */
+            --primary-dark: #004466;
+            --secondary-color: #d9534f;
+            --accent-color: #f39c12;
+            --bg-light: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-muted: #6c757d;
+            --white: #ffffff;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, #444, rgba(0, 68, 102, 0.9)), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80) center / cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            margin-top: -27px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+        }
+
+        .key-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .detail-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .detail-card i {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .detail-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .btn-register {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+            transition: var(--transition);
+        }
+
+        .btn-register:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px);
+        }
+
+        /* --- Overview Section --- */
+        .overview-content {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .media-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+
+        .poster-placeholder {
+            border: 2px dashed #ccc;
+            padding: 40px 20px;
+            border-radius: 6px;
+            background: #fafafa;
+            margin-bottom: 15px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 250px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        /* --- Program & Schedule Section --- */
+        .schedule-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tab-btn {
+            padding: 10px 25px;
+            border: none;
+            background-color: var(--white);
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .schedule-table-container {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eef0f2;
+        }
+
+        th {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        /* --- Speakers Section --- */
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .speaker-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .speaker-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+        }
+
+        .speaker-info {
+            padding: 20px;
+        }
+
+        .speaker-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .speaker-affiliation {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .speaker-bio {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* --- Committee Section --- */
+        .committee-table-container {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* --- Contact Section --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .contact-card a {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 25px 0;
+            font-size: 0.9rem;
+        }
+
+        
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .circle-image {
+   				width: 150px;
+    			height: 150px;
+    			border-radius: 50%;
+    			object-fit: cover;
+			}
+			.page-notice {
+    			background-color: #f4f7fb;
+    			border-left: 4px solid #ff5268;
+    			padding: 15px 20px;
+    			color: #333;
+    			font-family: Arial, sans-serif;
+			}
+
+			.page-notice strong {
+    			color: #ff5268;
+    			font-size: 18px;
+				}
+
+			.page-notice p {
+    			margin: 10px 0 0;
+    			font-size: 15px;
+    			line-height: 1.6;
+			}
+        
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="toggle-menu" id="toggle-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="slide-menu" id="slide-menu">
+            <ul>
+                <li class="active">
+                    <span><a href="index.html">Home</a></span>
+                </li>
+                <li class="active">
+                    <span><a href="about.html">About</a></span>
+                </li>
+                <li class="has-sub"><span class="tab"><a>Contributing</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+                            <li><a href="https://edas.info/N35431">EDAS Submission System</a></li>
+                            <li><a href="assets/ICM2026CFP.pdf">Call for Papers</a></li>
+                            <li><a href="assets/ICM-Call-for-Special-Sessions.pdf">Call for Special Sessions</a></li>
+                            <li><a href="assets/ICM-Call-for-Cross-Society-Special-Sessions.pdf">Call for Cross-Society Special Sessions</a></li>
+                            <li><a href="assets/ICM-CFP-Embedded-Workshop.pdf">⁠Call for ⁠Embedded Workshops</a></li>
+                            <li><a href="assets/ICM-CFP-Live Demo.pdf">Call for Live Demo</a></li>
+                            <li><a href="assets/ICM-Call-for-Tutorial.pdf">Call for Tutorial</a></li>
+                            <li><a href="final_paper.html">Final Paper Submission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-sub"><span class="tab"><a>Program</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+                            <li><a href="program.html">Program at a Glance</a></li>
+                            <!-- <li><a href="tech_program">Technical Program</a></li> -->
+                            <li><a href="assets/ICM2023%20ProgramFinal-2.pdf">Technical Program</a></li>
+                            <li><a href="speakers.html">Keynote Speakers</a></li>
+                            <li><a href="social_events.html">Social Events</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+							<li><a href="sponsorship.html">Sponsorship</a></li>
+							<li><a href="workshop-icm.html">Hands-on Workshop on Chip Design and Fabrication</a></li>
+							<li><a href="workshop-cass.html">3rd Sino-Malaysia IEEE CASS Workshop</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active">
+                    <span><a href="committee.html">Committee</a></span>
+                </li>
+                <!-- <li class="active">
+                        <span><a href="speakers">Speakers</a></span>                       
+                    </li> -->
+                <!-- <li class="active">
+                    <span><a href="program">Program</a></span>
+                </li> -->
+                <li class="has-sub"><span class="tab"><a>Registration</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+						<li><a href="registration.html">Registration</a></li>
+						<li><a href="student.html">Student Travel Grant</a></li>
+                    </ul>
+                    </div>
+				</li>
+                <!-- <li class="active">
+                    <span><a href="cfp">Call For Paper</a></span>
+                </li> -->
+                <li class="has-sub"><span class="tab"><a>Venue & Visitor Info</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+						<li><a href="visitor.html">Visa & Venue</a></li>
+						<li><a href="kuching.html">Kuching</a></li>
+                        <li><a href="hotel-recommendation.html">Hotel Recommendation</a></li>
+                    </ul>
+                    </div>
+                </li>
+				<li class="active">
+                    <span><a href="media.html">Media</a></span>
+                </li>
+                <li class="active">
+                    <span><a href="#footer">Contact Us</a></span>
+                </li>
+                <!--                    <li class="has-sub">
+                        <span class="tab"><a>Option With sub</a></span>
+                        <div class="sub-menu">
+                            <ul class="main">
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                                <li class="has-sub">
+                                    <span><a href="#">Sub option with sub</a></span>
+                                    <ul>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                                <li class="has-sub">
+                                    <span><a href="#">Sub option with sub</a></span>
+                                    <ul>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                            </ul>
+                        </div>
+                    </li>                    -->
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $('#toggle-menu').click(function() {
+                $(this).toggleClass('active');
+                $('#slide-menu').toggleClass('active');
+            });
+
+            $('.slide-menu > ul > li.has-sub .tab').on('click', function() {
+                $(this).siblings('.sub-menu').slideToggle();
+                $(this).parent('li').toggleClass('active');
+            });
+
+            $('.sub-menu li.has-sub').click(function() {
+                $(this).children('ul').slideToggle();
+                $(this).toggleClass('active');
+            });
+        });
+    </script><div id="navbar">
+    <div class="wrapper">
+        <div class="logos clear">
+            <div class="left_blk">
+                <a href="index.html"><img src="assets/images/icm_logoc619.png?v=1.0" alt=""></a>
+            </div>
+            <!--
+            <div class="right_blk clear">
+                <a href="https://www.ku.ac.ae/" target="_blank"><img src="assets/images/ku_logo.png" alt=""></a>
+                <a href="https://www.uaeu.ac.ae/en/" target="_blank"><img style="width: 319px; max-width: 100%;" src="assets/images/uae_uni_logo.jpg" alt=""></a>
+                <a href="https://ieee-cas.org/" target="_blank"><img style="width: 50px;" src="assets/images/cas_logo.png" alt=""></a>
+                <a href="https://www.ieee.org/" target="_blank"><img style="width: 150px;" src="assets/images/ieee_logo.png" alt=""></a>
+            </div>
+            -->
+        </div>
+        <div class="nav_items clear">
+            <ul class="clear">
+                <li><a href="index.html" class="">Home</a></li>
+                <li><a href="about.html" class="">About</a></li>
+                <li>
+                    <a>Contributing</a>
+                    <ul>
+                        <li><a href="https://edas.info/N35431">EDAS Submission System</a></li>
+                        <li><a href="assets/ICM2026CFP.pdf">Call for Papers</a></li>
+                            <li><a href="assets/ICM-Call-for-Special-Sessions.pdf">Call for Special Sessions</a></li>
+                            <li><a href="assets/ICM-Call-for-Cross-Society-Special-Sessions.pdf">Call for Cross-Society Special Sessions</a></li>
+                            <li><a href="assets/ICM-CFP-Embedded-Workshop.pdf">⁠Call for ⁠Embedded Workshops</a></li>
+                            <li><a href="assets/ICM-CFP-Live Demo.pdf">Call for Live Demo</a></li>
+                            <li><a href="assets/ICM-Call-for-Tutorial.pdf">Call for Tutorial</a></li>
+                            <li><a href="final_paper.html">Final Paper Submission</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Program</a>
+                    <ul>
+                        <li><a href="program.html">Program at a Glance</a></li>
+                        <!-- <li><a href="tech_program">Technical Program</a></li> -->
+                        <li><a href="assets/ICM2023%20ProgramFinal-2.pdf">Technical Program</a></li>
+                        <li><a href="speakers.html">Keynote Speakers
+                            </a></li>
+                        <li><a href="social_events.html">Social Events
+                            </a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+						<li><a href="sponsorship.html" class="">Sponsorship</a></li>
+						<li><a href="workshop-icm.html">Hands-on Workshop on Chip Design and Fabrication</a></li>
+						<li><a href="workshop-cass.html" class="active">3rd Sino-Malaysia IEEE CASS Workshop</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="program" class="">Program</a></li> -->
+                <li><a href="committee.html" class="">Committee</a></li>
+                <!-- <li><a href="speakers"class="">Speakers</a></li> -->
+
+                <li>
+                	<a>Registration</a>
+                    <ul>
+						<li><a href="registration.html">Registration</a></li>
+						<li><a href="student.html">Student Travel Grant</a></li>
+                    </ul>
+                </li>
+				
+                <li>
+                	<a>Venue & Visitor Info</a>
+                    <ul>
+						<li><a href="visitor.html">Visa & Venue</a></li>
+						<li><a href="kuching.html">Kuching</a></li>
+                        <li><a href="hotel-recommendation.html">Hotel Recommendation</a></li>
+                    </ul>
+                </li>
+				<li><a href="media.html">Media</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--
+<div id="registration">
+    <div id="banner">
+        <div class="wrapper">
+            <div class="inside">
+                <h1>Workshop</h1>
+                <h2>Workshop</h2>
+            </div>
+        </div>
+    </div>
+-->
+
+<!-- 1. Main Page (HOME) Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>3rd Sino-Malaysia IEEE Circuits and Systems Society (CASS) Outreach Workshop</h1>
+            <p class="hero-subtitle">Fostering Academic, Technical & Industry Collaboration Between China & Malaysia</p>
+            
+            <div class="key-details-grid">
+                <div class="detail-card">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h3>Date</h3>
+                    <p>Monday, December 7, 2026</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Venue</h3>
+                    <p>Room 4, Swinburne University of Technology, Sarawak, Malaysia</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Sessions</h3>
+                    <p>Session 1: 10:30 AM – 12:30 PM<br>Session 2: 3:15 PM – 5:15 PM</p>
+                </div>
+            </div>
+
+            <a href="https://forms.gle/Fff1cf7MFVDWjoHd7" target="_blank" class="btn-register">
+                Register Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+<!-- Notice -->
+		<div class="page-notice">
+   			<strong>Notice: Page Under Development</strong>
+    		<p>
+        Please note that some information on this page is currently
+        being finalized. Additional details will be added and the
+        page will be updated soon.
+    		</p>
+    		<p>Thank you for your patience and understanding.</p>
+		</div>
+
+
+
+<!-- Welcome & Overview Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Welcome & Event Overview</h2>
+            <div class="overview-content">
+                <p>The <strong>3rd Sino-Malaysia IEEE Circuits and Systems Society (CASS) Outreach Workshop</strong> is a key initiative designed to strengthen collaboration between academia, industry, and CASS members across China and Malaysia.</p>
+                <br>
+                <p>This one-and-a-half-day event brings together leading experts, researchers, and industry professionals to facilitate technical innovation and knowledge exchange in the field of circuits and systems. The program includes keynote technical talks, an industry visit, and a postgraduate mentoring session to deliver a comprehensive and engaging experience for all participants.</p>
+            </div>
+
+            <!-- Visual & Interactive Media Sections -->
+            <div class="media-grid">
+                <div class="media-card">
+                    <h3><i class="fa-solid fa-file-image"></i> Event Poster</h3>
+                    <br>
+                    <div class="poster-placeholder">
+                        <i class="fa-solid fa-image fa-3x" style="color: #ccc; margin-bottom: 10px;"></i>
+                        <p>Event Poster Banner</p>
+                    </div>
+                    <a href="#" class="btn-register" style="padding: 8px 20px; font-size: 0.9rem;">Download Poster</a>
+                </div>
+                <div class="media-card">
+                    <h3><i class="fa-solid fa-map-location-dot"></i> Event Location</h3>
+                    <br>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4071.482811889606!2d110.35473861061533!3d1.532445898446752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba70b11e02ce7%3A0x69cbf290cfd24bb7!2sSwinburne%20University%20of%20Technology%20Sarawak%20Campus!5e1!3m2!1sen!2slb!4v1792505014101!5m2!1sen!2slb" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 2. Program & Schedule Section -->
+    <section id="program" style="background-color: #fff;">
+        <div class="container">
+            <h2 class="section-title">Program & Schedule</h2>
+            <p class="section-subtitle">Monday, December 7, 2026 | Swinburne University of Technology</p>
+
+            <div class="schedule-table-container">
+                <h3 style="padding: 15px 20px; background: var(--primary-color); color: white;">
+                    <i class="fa-regular fa-sun"></i> Session 1 Schedule (Morning)
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Time</th>
+                            <th style="width: 45%;">Agenda / Presentation Title</th>
+                            <th style="width: 30%;">Speaker / Presenter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10:30 a.m. – 11:00 a.m.</td>
+                            <td>Registration & Networking</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 a.m. – 11:10 a.m.</td>
+                            <td>Opening Remarks</td>
+                            <td>Prof. Fakhrul Zaman Rokhani<br><small style="color:var(--text-muted)">(VP, IEEE CASS)</small></td>
+                        </tr>
+                        <tr>
+                            <td>11:10 a.m. – 11:40 a.m.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>11:40 a.m. – 12:10 p.m.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-table-container">
+                <h3 style="padding: 15px 20px; background: var(--primary-dark); color: white;">
+                    <i class="fa-regular fa-moon"></i> Session 2 Schedule (Evening)
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Time</th>
+                            <th style="width: 45%;">Agenda / Presentation Title</th>
+                            <th style="width: 30%;">Speaker / Presenter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3:15 p.m. – 3:45 p.m.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>3:45 p.m. – 4:15 p.m.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>4:15 p.m. – 4:45 p.m.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td>4:45 p.m. – 5:15 p.m.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 3. Keynote & Lecture Session (Speakers) Section -->
+    <section id="speakers">
+        <div class="container">
+            <h2 class="section-title">Keynote & Lecture Session</h2>
+            <p class="section-subtitle">Distinguished Speakers & Presenters</p>
+
+            <div class="speakers-grid">
+                <!-- Speaker Card 1 -->
+                <div class="speaker-card">
+                    <div class="speaker-img">
+                        <i class="fa-solid fa-user-tie fa-4x"></i>
+                        <!-- Replace icon with image element when ready: <img src="speaker1.jpg" alt="Speaker Name 1"> -->
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Speaker Name 1</h3>
+                        <div class="speaker-affiliation">AffiliationTBA</div>
+                        <p class="speaker-bio">BiographyTBA</p>
+                    </div>
+                </div>
+
+                <!-- Speaker Card 2 -->
+                <div class="speaker-card">
+                    <div class="speaker-img">
+                        <i class="fa-solid fa-user-tie fa-4x"></i>
+                        <!-- Replace icon with image element when ready: <img src="speaker2.jpg" alt="Speaker Name 2"> -->
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Speaker Name 2</h3>
+                        <div class="speaker-affiliation">AffiliationTBA</div>
+                        <p class="speaker-bio">BiographyTBA</p>
+                    </div>
+                </div>
+
+                <!-- Speaker Card 3 -->
+                <div class="speaker-card">
+                    <div class="speaker-img">
+                        <i class="fa-solid fa-user-tie fa-4x"></i>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>Speaker Name 3</h3>
+                        <div class="speaker-affiliation">AffiliationTBA</div>
+                        <p class="speaker-bio">BiographyTBA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 4. Organizing Committee Section -->
+    <section id="committee" style="background-color: #fff;">
+        <div class="container">
+            <h2 class="section-title">Organizing Committee</h2>
+            <p class="section-subtitle">Leadership and organizing team</p>
+
+            <div class="committee-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Institution / Organization</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>.</strong></td>
+                            <td>Committee Chair</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>.</strong></td>
+                            <td>Co-Chair</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>.</strong></td>
+                            <td>Technical Program Chair</td>
+                            <td>.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>.</strong></td>
+                            <td>Local Arrangements Chair</td>
+                            <td>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+<!-- 5. Contact & Inquiries Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact & Inquiries</h2>
+            <p class="section-subtitle">For any inquiries regarding registration, event details, or sponsorship, please contact the secretariat:</p>
+
+            <div class="contact-grid">
+                <!-- Secretariat 1 -->
+                <div class="contact-card">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <h3>Dr. Haslina Jaafar</h3>
+                    <img src="assets/images/profile/p2.jpg" alt="Profile Picture" class="circle-image">
+                    <p><i class="fa-solid fa-phone"></i> +60 12-300 5786</p>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:jhaslina@upm.edu.my">jhaslina@upm.edu.my</a></p>
+                </div>
+
+                <!-- Secretariat 2 -->
+                <div class="contact-card">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h3>Assoc. Prof. Fakhrul Zaman Rokhani</h3>
+                    <img src="assets/images/profile/p1.png" alt="Profile Picture" class="circle-image">
+                    <p><i class="fa-solid fa-phone"></i> +60 19-775 7007</p>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:fzr@upm.edu.my">fzr@upm.edu.my</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 3rd Sino-Malaysia IEEE CASS Outreach Workshop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        if (window.innerWidth > 900) {
+            var min_highestSection = 0;
+            $('#footer .dbl_blk .inner').each(function() {
+                if ($(this).height() > min_highestSection) {
+                    min_highestSection = $(this).height();
+                }
+            });
+            $('#footer .dbl_blk .inner').height(min_highestSection);
+            $('#footer .dbl_blk .right_blk').height(min_highestSection - 15);
+        }
+    });
+
+    $(document).ready(function() {
+        if (window.innerWidth > 400) {
+            setTimeout(function() {
+                var min_highestSection = 0;
+                $('#cmn-sponsor .blks .blk').each(function() {
+                    if ($(this).height() > min_highestSection) {
+                        min_highestSection = $(this).height();
+                    }
+                });
+                $('#cmn-sponsor .blks .blk').height(min_highestSection);
+            }, 300);
+        }
+    });
+</script>
+
+</body>
+
+
+<!-- Mirrored from www.ieee-icm2023.org/registration by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 16:29:28 GMT -->
+</html>
+
