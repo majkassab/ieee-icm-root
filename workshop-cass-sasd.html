@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <title>ICM 2026 | The 7th IEEE Circuits and Systems Standard Activities Workshop</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+    <!--styles-->
+    <link href="assets/scss/reset_cssf195.css?v=2.1" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/stylee67d.css?v=1.3" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/homef731.html?v=5.0" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/insidea9f2.css?v=2.6" type="text/css" rel="stylesheet" />
+    <link href="assets/scss/responsive/style-responsive83a7.css?v=1.9" type="text/css" rel="stylesheet" />
+
+    <!-- Include the jQuery library (local or CDN) -->
+    <script src="assets/js/jquery-latest.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/assets/owl.theme.default.min.css">
+
+    <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="assets/plugins/fancybox/dist/jquery.fancybox.min.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4HKHJNMQYY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4HKHJNMQYY');
+    </script>
+	<style>
+     /* --- Root CSS Variables --- */
+        :root {
+            --primary-color: #006699; /* IEEE Blue */
+            --primary-dark: #004466;
+            --secondary-color: #d9534f;
+            --accent-color: #f39c12;
+            --bg-light: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-muted: #6c757d;
+            --white: #ffffff;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+        .csscontainer a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .csscontainer ul {
+            list-style: none;
+        }
+
+        .csscontainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* --- Hero Section --- */
+        .csshero {
+            background: linear-gradient(135deg, #3b7135, rgba(0, 68, 102, 0.9)), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1500&q=80) center / cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            margin-top: -27px;
+        }
+
+        .csshero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            color: #e0e0e0;
+        }
+
+        .key-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .detail-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .detail-card i {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .detail-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .btn-register {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+            transition: var(--transition);
+        }
+
+        .btn-register:hover {
+            background-color: #e67e22;
+            transform: translateY(-2px);
+        }
+
+        /* --- Overview Section --- */
+        .overview-content {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .media-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+
+        .poster-placeholder {
+            border: 2px dashed #ccc;
+            padding: 40px 20px;
+            border-radius: 6px;
+            background: #fafafa;
+            margin-bottom: 15px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 250px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        /* --- Program & Schedule Section --- */
+        .schedule-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tab-btn {
+            padding: 10px 25px;
+            border: none;
+            background-color: var(--white);
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .schedule-table-container {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 30px;
+        }
+
+        .csscontainer table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .csscontainer th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eef0f2;
+        }
+
+        .csscontainer th {
+            background-color: #f1f5f9;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .csscontainer tr:hover {
+            background-color: #f8fafc;
+        }
+
+        /* --- Speakers Section --- */
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .speaker-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .speaker-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+        }
+
+        .speaker-info {
+            padding: 20px;
+        }
+
+        .speaker-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .speaker-affiliation {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .speaker-bio {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* --- Committee Section --- */
+        .committee-table-container {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* --- Contact Section --- */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .contact-card a {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 25px 0;
+            font-size: 0.9rem;
+        }
+
+        
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .csshero h1 {
+                font-size: 2rem;
+            }
+            .circle-image {
+   				width: 150px;
+    			height: 150px;
+    			border-radius: 50%;
+    			object-fit: cover;
+			}
+			.page-notice {
+    			background-color: #f4f7fb;
+    			border-left: 4px solid #ff5268;
+    			padding: 15px 20px;
+    			color: #333;
+    			font-family: Arial, sans-serif;
+			}
+
+			.page-notice strong {
+    			color: #ff5268;
+    			font-size: 18px;
+				}
+
+			.page-notice p {
+    			margin: 10px 0 0;
+    			font-size: 15px;
+    			line-height: 1.6;
+			}
+			/* Main tutorials container */
+    .tutorials-container {
+        width: 100%;
+        margin: 30px auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Individual tutorial */
+    .tutorials-container .tutorial-item {
+        margin-bottom: 14px;
+        border: none;
+    }
+
+    /* Clickable tutorial title */
+    .tutorials-container .tutorial-item summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 30px 40px;
+        min-height: 112px;
+        box-sizing: border-box;
+
+        background-color: #f3fbfe;
+        color: #080808;
+
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 1.5;
+
+        cursor: pointer;
+        list-style: none;
+        transition: background-color 0.2s ease;
+    }
+
+    /* Remove default browser arrow */
+    .tutorials-container .tutorial-item summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .tutorials-container .tutorial-item summary::marker {
+        content: "";
+    }
+
+    /* Alternating title backgrounds */
+    .tutorials-container .tutorial-item:nth-child(even) summary {
+        background-color: #e0f7fd;
+    }
+
+    /* Hover effect */
+    .tutorials-container .tutorial-item summary:hover {
+        background-color: #d5f1fa;
+    }
+
+    /* Custom blue arrow */
+    .tutorials-container .tutorial-item summary::after {
+        content: "";
+        flex-shrink: 0;
+
+        width: 12px;
+        height: 12px;
+
+        border-right: 4px solid #329fc0;
+        border-bottom: 4px solid #329fc0;
+
+        transform: rotate(45deg);
+        margin: -7px 5px 0 0;
+
+        transition: transform 0.2s ease;
+    }
+
+    /* Rotate arrow when expanded */
+    .tutorials-container .tutorial-item[open] summary::after {
+        transform: rotate(225deg);
+        margin-top: 7px;
+    }
+
+    /* Expanded tutorial content */
+    .tutorials-container .tutorial-content {
+        padding: 25px 40px 35px;
+        background-color: #ffffff;
+        border: 1px solid #dcecf2;
+        border-top: none;
+
+        color: #333333;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    /* Section headings */
+    .tutorials-container .tutorial-content h3 {
+        margin-top: 20px;
+        margin-bottom: 12px;
+
+        color: #003366;
+        font-size: 21px;
+    }
+
+    .tutorials-container .tutorial-content h3:first-child {
+        margin-top: 0;
+    }
+
+    /* Speaker information card */
+    .tutorials-container .speaker-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 25px;
+
+        margin-top: 18px;
+        padding: 25px;
+
+        background-color: #f3f8fc;
+        border-radius: 6px;
+    }
+
+    /* Speaker photo */
+    .tutorials-container .speaker-photo {
+        width: 125px;
+        height: 125px;
+        flex-shrink: 0;
+
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* Speaker biography */
+    .tutorials-container .speaker-info {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .tutorials-container .speaker-info h4 {
+        margin: 0 0 5px;
+        color: #003366;
+        font-size: 20px;
+    }
+
+    .tutorials-container .speaker-affiliation {
+        margin-bottom: 10px;
+        color: #666666;
+        font-style: italic;
+    }
+
+    .tutorials-container .speaker-info p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Mobile responsive layout */
+    @media (max-width: 768px) {
+        .tutorial-item summary {
+            padding: 20px;
+            min-height: 85px;
+            font-size: 17px;
+            gap: 15px;
+        }
+
+        .tutorials-container .tutorial-content {
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        .tutorials-container .tutorial-content h3 {
+            font-size: 19px;
+        }
+
+        .tutorials-container .speaker-card {
+            flex-direction: column;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .tutorials-container .speaker-photo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .tutorials-container .speaker-info h4 {
+            font-size: 18px;
+        }
+        }
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="toggle-menu" id="toggle-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="slide-menu" id="slide-menu">
+            <ul>
+                <li class="active">
+                    <span><a href="index.html">Home</a></span>
+                </li>
+                <li class="active">
+                    <span><a href="about.html">About</a></span>
+                </li>
+                <li class="has-sub"><span class="tab"><a>Contributing</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+                            <li><a href="https://edas.info/N35431">EDAS Submission System</a></li>
+                            <li><a href="assets/ICM2026CFP.pdf">Call for Papers</a></li>
+                            <li><a href="assets/ICM-Call-for-Special-Sessions.pdf">Call for Special Sessions</a></li>
+                            <li><a href="assets/ICM-Call-for-Cross-Society-Special-Sessions.pdf">Call for Cross-Society Special Sessions</a></li>
+                            <li><a href="assets/ICM-CFP-Embedded-Workshop.pdf">⁠Call for ⁠Embedded Workshops</a></li>
+                            <li><a href="assets/ICM-CFP-Live Demo.pdf">Call for Live Demo</a></li>
+                            <li><a href="assets/ICM-Call-for-Tutorial.pdf">Call for Tutorial</a></li>
+                            <li><a href="final_paper.html">Final Paper Submission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-sub"><span class="tab"><a>Program</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+                            <li><a href="program.html">Program at a Glance</a></li>
+                            <!-- <li><a href="tech_program">Technical Program</a></li> -->
+                            <li><a href="assets/ICM2023%20ProgramFinal-2.pdf">Technical Program</a></li>
+                            <li><a href="speakers.html">Keynote Speakers</a></li>
+                            <li><a href="social_events.html">Social Events</a></li>
+                            <li><a href="tutorials.html">Tutorials</a></li>
+							<li><a href="sponsorship.html">Sponsorship</a></li>
+							<li><a href="workshop-icm.html">Hands-on Workshop on Chip Design and Fabrication</a></li>
+							<li><a href="workshop-cass.html">3rd Sino-Malaysia IEEE CASS Workshop</a></li>
+							<li><a href="workshop-cas-sasd" class="active">The 7th IEEE Circuits and Systems Standard Activities Worksho</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active">
+                    <span><a href="committee.html">Committee</a></span>
+                </li>
+                <!-- <li class="active">
+                        <span><a href="speakers">Speakers</a></span>                       
+                    </li> -->
+                <!-- <li class="active">
+                    <span><a href="program">Program</a></span>
+                </li> -->
+                <li class="has-sub"><span class="tab"><a>Registration</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+						<li><a href="registration.html">Registration</a></li>
+						<li><a href="student.html">Student Travel Grant</a></li>
+                    </ul>
+                    </div>
+				</li>
+                <!-- <li class="active">
+                    <span><a href="cfp">Call For Paper</a></span>
+                </li> -->
+                <li class="has-sub"><span class="tab"><a>Venue & Visitor Info</a></span>
+                    <div class="sub-menu">
+                        <ul class="main">
+						<li><a href="visitor.html">Visa & Venue</a></li>
+						<li><a href="kuching.html">Kuching</a></li>
+                        <li><a href="hotel-recommendation.html">Hotel Recommendation</a></li>
+                    </ul>
+                    </div>
+                </li>
+				<li class="active">
+                    <span><a href="media.html">Media</a></span>
+                </li>
+                <li class="active">
+                    <span><a href="#footer">Contact Us</a></span>
+                </li>
+                <!--                    <li class="has-sub">
+                        <span class="tab"><a>Option With sub</a></span>
+                        <div class="sub-menu">
+                            <ul class="main">
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                                <li class="has-sub">
+                                    <span><a href="#">Sub option with sub</a></span>
+                                    <ul>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                                <li class="has-sub">
+                                    <span><a href="#">Sub option with sub</a></span>
+                                    <ul>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                        <li><a href="#">sub of sub's sub</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sub option</a></li>
+                                <li><a href="#">Sub option</a></li>
+                            </ul>
+                        </div>
+                    </li>                    -->
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function() {
+            $('#toggle-menu').click(function() {
+                $(this).toggleClass('active');
+                $('#slide-menu').toggleClass('active');
+            });
+
+            $('.slide-menu > ul > li.has-sub .tab').on('click', function() {
+                $(this).siblings('.sub-menu').slideToggle();
+                $(this).parent('li').toggleClass('active');
+            });
+
+            $('.sub-menu li.has-sub').click(function() {
+                $(this).children('ul').slideToggle();
+                $(this).toggleClass('active');
+            });
+        });
+    </script><div id="navbar">
+    <div class="wrapper">
+        <div class="logos clear">
+            <div class="left_blk">
+                <a href="index.html"><img src="assets/images/icm_logoc619.png?v=1.0" alt=""></a>
+            </div>
+            <!--
+            <div class="right_blk clear">
+                <a href="https://www.ku.ac.ae/" target="_blank"><img src="assets/images/ku_logo.png" alt=""></a>
+                <a href="https://www.uaeu.ac.ae/en/" target="_blank"><img style="width: 319px; max-width: 100%;" src="assets/images/uae_uni_logo.jpg" alt=""></a>
+                <a href="https://ieee-cas.org/" target="_blank"><img style="width: 50px;" src="assets/images/cas_logo.png" alt=""></a>
+                <a href="https://www.ieee.org/" target="_blank"><img style="width: 150px;" src="assets/images/ieee_logo.png" alt=""></a>
+            </div>
+            -->
+        </div>
+        <div class="nav_items clear">
+            <ul class="clear">
+                <li><a href="index.html" class="">Home</a></li>
+                <li><a href="about.html" class="">About</a></li>
+                <li>
+                    <a>Contributing</a>
+                    <ul>
+                        <li><a href="https://edas.info/N35431">EDAS Submission System</a></li>
+                        <li><a href="assets/ICM2026CFP.pdf">Call for Papers</a></li>
+                            <li><a href="assets/ICM-Call-for-Special-Sessions.pdf">Call for Special Sessions</a></li>
+                            <li><a href="assets/ICM-Call-for-Cross-Society-Special-Sessions.pdf">Call for Cross-Society Special Sessions</a></li>
+                            <li><a href="assets/ICM-CFP-Embedded-Workshop.pdf">⁠Call for ⁠Embedded Workshops</a></li>
+                            <li><a href="assets/ICM-CFP-Live Demo.pdf">Call for Live Demo</a></li>
+                            <li><a href="assets/ICM-Call-for-Tutorial.pdf">Call for Tutorial</a></li>
+                            <li><a href="final_paper.html">Final Paper Submission</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Program</a>
+                    <ul>
+                        <li><a href="program.html">Program at a Glance</a></li>
+                        <!-- <li><a href="tech_program">Technical Program</a></li> -->
+                        <li><a href="assets/ICM2023%20ProgramFinal-2.pdf">Technical Program</a></li>
+                        <li><a href="speakers.html">Keynote Speakers
+                            </a></li>
+                        <li><a href="social_events.html">Social Events
+                            </a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+						<li><a href="sponsorship.html" class="">Sponsorship</a></li>
+						<li><a href="workshop-icm.html">Hands-on Workshop on Chip Design and Fabrication</a></li>
+						<li><a href="workshop-cass.html">3rd Sino-Malaysia IEEE CASS Workshop</a></li>
+						<li><a href="workshop-cas-sasd" class="active">The 7th IEEE Circuits and Systems Standard Activities Worksho</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="program" class="">Program</a></li> -->
+                <li><a href="committee.html" class="">Committee</a></li>
+                <!-- <li><a href="speakers"class="">Speakers</a></li> -->
+
+                <li>
+                	<a>Registration</a>
+                    <ul>
+						<li><a href="registration.html">Registration</a></li>
+						<li><a href="student.html">Student Travel Grant</a></li>
+                    </ul>
+                </li>
+				
+                <li>
+                	<a>Venue & Visitor Info</a>
+                    <ul>
+						<li><a href="visitor.html">Visa & Venue</a></li>
+						<li><a href="kuching.html">Kuching</a></li>
+                        <li><a href="hotel-recommendation.html">Hotel Recommendation</a></li>
+                    </ul>
+                </li>
+				<li><a href="media.html">Media</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--
+<div id="registration">
+    <div id="banner">
+        <div class="wrapper">
+            <div class="inside">
+                <h1>Workshop</h1>
+                <h2>Workshop</h2>
+            </div>
+        </div>
+    </div>
+-->
+
+<!-- 1. Main Page (HOME) Section -->
+    <section id="home" class="csshero">
+        <div class="csscontainer">
+            <h1>The 7th IEEE Circuits and Systems Standard Activities Workshop</h1>
+            <p class="hero-subtitle">Standardization - IEEE P3468 Chiplet Interface Circuit Standard development and vision</p>
+            
+            <div class="key-details-grid">
+                <div class="detail-card">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h3>Date</h3>
+                    <p>December 2026</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Venue</h3>
+                    <p>Borneo Cultures Museum</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fa-regular fa-clock"></i>
+                    <h3>Time</h3>
+                    <p>10:00 AM Till 12:30 PM</p>
+                </div>
+            </div>
+<!--
+            <a href="https://forms.gle/Fff1cf7MFVDWjoHd7" target="_blank" class="btn-register">
+                Register Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+-->
+        </div>
+    </section>
+<!-- Notice
+		<div class="page-notice">
+   			<strong>Notice: Page Under Development</strong>
+    		<p>
+        Please note that some information on this page is currently
+        being finalized. Additional details will be added and the
+        page will be updated soon.
+    		</p>
+    		<p>Thank you for your patience and understanding.</p>
+		</div>
+
+-->
+
+<!-- Welcome & Overview Section 
+    <section>
+        <div class="container">
+            <h2 class="section-title">Welcome & Event Overview</h2>
+            <div class="overview-content">
+                <p>The <strong>3rd Sino-Malaysia IEEE Circuits and Systems Society (CASS) Outreach Workshop</strong> is a key initiative designed to strengthen collaboration between academia, industry, and CASS members across China and Malaysia.</p>
+                <br>
+                <p>This one-and-a-half-day event brings together leading experts, researchers, and industry professionals to facilitate technical innovation and knowledge exchange in the field of circuits and systems. The program includes keynote technical talks, an industry visit, and a postgraduate mentoring session to deliver a comprehensive and engaging experience for all participants.</p>
+            </div>
+-->
+            <!-- Visual & Interactive Media Sections
+            <div class="media-grid">
+                <div class="media-card">
+                    <h3><i class="fa-solid fa-file-image"></i> Event Poster</h3>
+                    <br>
+                    <div class="poster-placeholder">
+                        <i class="fa-solid fa-image fa-3x" style="color: #ccc; margin-bottom: 10px;"></i>
+                        <p>Event Poster Banner</p>
+                    </div>
+                    <a href="#" class="btn-register" style="padding: 8px 20px; font-size: 0.9rem;">Download Poster</a>
+                </div>
+                <div class="media-card">
+                    <h3><i class="fa-solid fa-map-location-dot"></i> Event Location</h3>
+                    <br>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4071.482811889606!2d110.35473861061533!3d1.532445898446752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba70b11e02ce7%3A0x69cbf290cfd24bb7!2sSwinburne%20University%20of%20Technology%20Sarawak%20Campus!5e1!3m2!1sen!2slb!4v1792505014101!5m2!1sen!2slb" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+<!-- 2. Program & Schedule Section -->
+    <section id="abstract" style="background-color: #fff;">
+        <div class="csscontainer">
+            <h2 class="section-title">Agenda</h2>
+            <p class="section-subtitle">December 2026 | At ICM 2026</p>
+
+            <div class="schedule-table-container">
+                <h3 style="padding: 15px 20px; background: var(--primary-color); color: white;">
+                    <i class="fa-regular fa-sun"></i> Agenda
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Time</th>
+                            <th style="width: 75%;">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10:00 AM – 10:10 AM</td>
+                            <td>Opening Ceremony<br><small style="color: #004466">Qinfen Hao, IEEE P3468 Chair, Chinese Academy of Sciences</small></td>
+                        </tr>
+                        <tr>
+                            <td>10:10 AM – 10:45 AM</td>
+                            <td>IEEE P3468 Chiplet Interface Circuit Standard: Overview & Vision<br><small style="color: #004466">Qinfen Hao, IEEE P3468 Chair, Chinese Academy of Sciences</small></td>
+                        </tr>
+                        <tr>
+                            <td>10:45 AM – 11:15 AM</td>
+                            <td>Crosstalk Cancellation Technology for High-density, High-Speed Die-to-Die Interconnects<br><small style="color: #004466">Yuanlin Nong, Nanjing University</small></td>
+                        </tr>
+                        <tr>
+                            <td>11:15 AM – 11:45 AM</td>
+                            <td>Research on Compatibility and Testability Technologies for High-Speed, High-Density Interconnections<br><small style="color: #004466">Prof. Xiaoteng Zhao, Xidian University (Virtual)</small></td>
+                        </tr>
+                        <tr>
+                            <td>11:45 AM – 12:20 PM</td>
+                            <td>AI-Driven Chiplet Design: Challenge of Accelerating Innovation Through Open Source EDA<br><small style="color: #004466">BoonChong Ang, Intel</small></td>
+                        </tr>
+                        <tr>
+                            <td>12:20 PM – 12:30 PM</td>
+                            <td>Closing Ceremony<br><small style="color: #004466">BoonChong Ang, Intel</small></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+<!-- Bio -->
+	    <section id="program" style="background-color: #fff;">
+        <div class="csscontainer">
+            <h2 class="section-title">Abstract and Biography</h2>
+		<div class="tutorials-container">
+
+    <!-- Tutorial 1 -->
+    <details class="tutorial-item">
+
+        <summary>
+            IEEE P3468 Chiplet Interface Circuit Standard: Overview & Vision
+        </summary>
+
+        <div class="tutorial-content">
+			<h2>Prof. Qinfen Hao — Chinese Academy of Sciences · IEEE P3468 Chair</h2>
+            <h3>Abstract</h3>
+            <p style=" text-align: justify;">
+                This opening keynote introduces the motivation, scope, and roadmap of the IEEE P3468 Chiplet Interface Circuit standard. It explains why a unified Compatible IO physical layer — capable of operating in both single-ended and differential modes through one transceiver — is needed to bridge fragmented die-to-die interfaces (UCIe, OIF CEI, HBM). The talk outlines the layered architecture, target application scenarios, and the standardization challenges of multi-vendor interoperability in the AI era.
+            </p>
+            <h3>Biography</h3>
+			<p style=" text-align: justify;">
+			Qinfen Hao obtained his Ph.D. in System Architecture from the Institute of Computing Technology, Chinese Academy of Sciences (CAS) in 2001. He is currently a Professor at the University of the Chinese Academy of Sciences and Director of the Interconnect Technology Laboratory of ICT, CAS. He has pioneered China's first teraflops high-performance computers, first 32-way high-end SMP servers, first cache-coherence interconnect chips in SMP servers, and the first ARM processor in China. He has published more than 50 research papers with over 100 granted patents and has twice won the second prize of the Chinese National Science and Technology Progress Award. He chairs the IEEE P3468 Chiplet Interface Circuit Standard Working Group.
+			</p>
+        </div>
+
+    </details>
+
+ <!-- Tutorial 2 -->
+    <details class="tutorial-item">
+
+        <summary>
+            Crosstalk Cancellation Technology for High-density, High-Speed Die-to-Die Interconnect 
+        </summary>
+
+        <div class="tutorial-content">
+			<h2>Yuanlin Nong — Nanjing University</h2>
+            <h3>Abstract</h3>
+            <p style=" text-align: justify;">
+            	As die-to-die (D2D) interconnects continue to evolve toward higher density and higher speed, crosstalk is gradually becoming the dominant issue, more prominent than insertion loss. This lecture focuses on crosstalk cancellation technologies for high-density, high-speed D2D interconnects. It first analyzes crosstalk under D2D channel conditions. It then introduces key technical approaches and engineering practices for crosstalk cancellation from the perspectives of channel layout optimization, coding methods, and XTC circuits. Finally, in conjunction with the evolution of relevant standards, it discusses the standardization requirements and development directions of crosstalk cancellation technologies. 
+            </p>
+            <h3>Biography</h3>
+			<p style=" text-align: justify;">
+			Yuanlin Nong is currently pursuing the Ph.D. degree in electrical engineering with Nanjing University, Nanjing, China. His research interests include high-speed wireline transceivers for die-to-die chiplets and memory interfaces.
+			</p>
+
+        </div>
+
+    </details>
+
+    <!-- Tutorial 3 -->
+    <details class="tutorial-item">
+
+        <summary>
+            Research on Compatibility and Testability Technologies for High-Speed, High-Density Interconnections 
+        </summary>
+
+        <div class="tutorial-content">
+			<h2>Dr. Xiaoteng Zhao — IEEE P3468 — Xidian University </h2>
+            <h3>Abstract</h3>
+            <p style=" text-align: justify;">
+                This talk details the Compatible IO dual-mode PHY at the heart of P3468. It covers the shared-core, mode-switched transceiver supporting single-ended NRZ (2–64 Gb/s) and differential NRZ/PAM4 (56–112 Gb/s) through a high-bandwidth (>32–45 GHz) SE/differential MUX, together with electrical specifications, the configurable VM/CM hybrid driver, and simultaneous bidirectional (SBD) signaling for ~2× bandwidth-density improvement.
+            </p>
+            <h3>Biography</h3>
+			<p style=" text-align: justify;">
+			Xiaoteng Zhao leads the Physical Layer design of the IEEE P3468 standard, covering the dual-mode PHY architecture, simultaneous bidirectional (SBD) signaling, cross-voltage/cross-process adaptation, and signal integrity. His work focuses on high-speed mixed-signal transceiver design for chiplet interconnects.
+			</p>
+
+        </div>
+    </details>
+    
+        <!-- Tutorial 4 -->
+    <details class="tutorial-item">
+
+        <summary>
+            AI-Driven Chiplet Design: Challenge of Accelerating Innovation Through Open Source EDA
+        </summary>
+
+        <div class="tutorial-content">
+            <h2>Dr. Boon Chong Ang — Intel</h2>
+            <h3>Abstract</h3>
+            <p style=" text-align: justify;">
+            The exponential growth of AI and HPC workloads has outpaced traditional transistor scaling, driving a strategic shift toward heterogeneous chiplet architectures and advanced packaging. To support this, open-source Electronic Design Automation (EDA) tools offer a transformative pathway by reducing costs and enabling rapid architectural exploration. However, production adoption faces significant hurdles, including limited advanced-node PDK access, analog tool immaturity, and a lack of formal signoff certification. Consequently, this presentation advocates for a hybrid design methodology: leveraging open-source EDA for early-stage profiling and innovation, while relying on commercial tools for final production signoff. Ultimately, accelerating semiconductor innovation requires coordinated industry efforts to standardize interfaces, validate open-source flows, and build a collaborative, reusable chiplet ecosystem.
+            </p>
+            <h3>Biography</h3>
+			<p style=" text-align: justify;">
+			Ang Boon Chong was born in Penang, Malaysia, in 1978. He received the B.E. degree in microelectronic engineering from Universiti Putra Malaysia, Malaysia, in 2002, the M.B.A. degree from Open University Malaysia, Malaysia, in 2014, and the D.B.A. degree from UNITAR International University, Malaysia, in 2026. He is currently a Technical Lead with Intel Malaysia, where his work focuses on the evaluation of advanced nodes and methodologies. An active contributor to his field, Dr. Ang has authored over 80 papers, white papers, and books, and has delivered invited talks in eight countries. He is also a Senior Member of the IEEE.
+			</p>
+
+        </div>
+    </details>
+
+
+		</div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The 7th IEEE Circuits and Systems Standard Activities Workshop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        if (window.innerWidth > 900) {
+            var min_highestSection = 0;
+            $('#footer .dbl_blk .inner').each(function() {
+                if ($(this).height() > min_highestSection) {
+                    min_highestSection = $(this).height();
+                }
+            });
+            $('#footer .dbl_blk .inner').height(min_highestSection);
+            $('#footer .dbl_blk .right_blk').height(min_highestSection - 15);
+        }
+    });
+
+    $(document).ready(function() {
+        if (window.innerWidth > 400) {
+            setTimeout(function() {
+                var min_highestSection = 0;
+                $('#cmn-sponsor .blks .blk').each(function() {
+                    if ($(this).height() > min_highestSection) {
+                        min_highestSection = $(this).height();
+                    }
+                });
+                $('#cmn-sponsor .blks .blk').height(min_highestSection);
+            }, 300);
+        }
+    });
+</script>
+
+</body>
+
+
+<!-- Mirrored from www.ieee-icm2023.org/registration by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 16:29:28 GMT -->
+</html>
+
